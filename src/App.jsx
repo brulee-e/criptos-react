@@ -1,7 +1,7 @@
 import { useState } from "react"
 import styled from "@emotion/styled"
 import ImagenCripto from "./img/imagen-criptos.png"
-import Formulario from "./Formulario"
+import Formulario from "./components/Formulario"
 
 const Heading = styled.h1`
   font-family: "Lato", sans-serif;
@@ -47,7 +47,7 @@ function App() {
       <Imagen src={ImagenCripto} alt="imagenes criptomonedas" />
       <div>
         <Heading>Cotiza criptomonedas al instante</Heading>
-        <Formulario />
+        <Formulario/>
       </div>
     </Contenedor>
 
