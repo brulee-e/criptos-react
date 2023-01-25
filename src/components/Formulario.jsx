@@ -55,9 +55,10 @@ const Formulario = ({setMonedas}) => {
     const handleSubmit = e => {
         e.preventDefault();
 
+        //Si aun no se ha seleccionado moneda y cripto da error.
         if ([moneda, criptomoneda].includes("")) {
             setError(true);
-            return
+            return //Evita que siga ejecutando el código.
         }
 
         setError(false);
@@ -82,7 +83,6 @@ const Formulario = ({setMonedas}) => {
                 />
             </form>
         </>
-
     )
 }
 
